@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Participant details</title>
+</head>
+<body style=background-color:BlanchedAlmond>
+<h1 style=text-align:center>WELECOM TO THE EVENT REGISTRATION</h1>
+<form>
+<table border="5" style=background-color:LightCyan    align="center">
+<tr>
+<td> NAME : </td>
+<td><input type="text" placeholder="Enter your name"  name="participants" pattern="[a-z,A-Z]{*}"></td>
+</tr>
+<tr>
+<td> DATE OF BIRTH : </td>
+<td><input type="date" placeholder="dd/mm/yyyy"></td>
+</tr>
+<tr>
+<td> GENDER :</td>
+<td>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+</tr>
+<tr>
+<td> EMAIL ID :</td>
+<td><input type="email" placeholder="Enter your mail id"></td>
+</tr>
+<tr>
+<td> MOBILE NUMBERR :</td>
+<td><input type="text" placeholder="0123456789" pattern ="[0-9]{10}"></td>
+</tr>
+<tr>
+<td> ADDRESS :</td>
+<td><textarea rows="5" col="15" placeholder="Type your adderss"></textarea></td>
+</tr>
+<tr>
+<td>STATE :</td>
+<td><input type="text" placeholder="Eg:TamilNadu"></td>
+</tr>
+<tr>
+<td> PINCODE :</td>
+<td> <input type="text" placeholder="012345" pattern ="[0-9]{6}"></td>
+</tr>
+<tr>
+<td>EVENT INTERESTED :</td>
+<td>
+<input type="checkbox" name="events">Speech<br>
+<input type="checkbox" name="events">Dance<br>
+<input type="checkbox" name="events">Singing<br>
+<input type="checkbox" name="events">Essay writing<br>
+<input type="checkbox" name="events">Debate<br>
+<input type="checkbox" name="events">Poem<br>
+<input type="checkbox" name="events">Music<br>
+</td>
+</tr>
+<tr>
+<td>Accommodation required ?</td>
+<td>
+<input type="radio" name="accommodation">Yes
+<input type="radio" name="accommodation">No
+</td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
