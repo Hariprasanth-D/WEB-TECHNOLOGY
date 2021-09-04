@@ -1,0 +1,75 @@
+<html>
+<body>
+<h2>To get a random number between 0 to 100</h2>
+<div>
+<p id="number"></p>
+
+<button  onclick="random();">GET NUMBER</button>
+</div>
+<hr>
+<div>
+<h2>Read 'N' names and sort the names in ascending and descending order</h2>
+<p id="p" ></p>
+<p id="p1" ></p>
+<p id="p2" </p>
+<input type="text" id="t1" placeholder="enter names">
+<br><br>
+<button  onclick="add()">add</button><br><br>
+<button  onclick="ascending();">ASCENDING</button>
+<button  onclick="descending();">DESCENDING</button>
+</div>
+<hr>
+<h2 > Write the JS program to demonstrate different mouse events.</h2>
+<p id="l" >result</p>
+<button id="btn1" >Single Click</button><br><br>
+<button id="btn2" >Double click</button><br><br>
+<p id="l2" > SAKTHI KARTHI LINGAM </p>
+
+
+</body>
+<script>
+function random()
+{
+	document.getElementById("number").innerHTML = Math.floor(Math.random() * 100);
+}
+
+var a=[]
+function add(){
+	var push=document.getElementById("t1").value;
+	a.push(push);
+
+	var element="";
+	for(i=0;i<a.length;i++){
+		element=element+a[i] + "<br/>" ;
+	}
+	document.getElementById('p').innerHTML=element;
+
+}
+function ascending()
+{
+	document.getElementById("p1").innerHTML = a.sort();
+}
+function descending()
+{
+	document.getElementById("p2").innerHTML = a.reverse();
+}
+
+let single =document.getElementById('btn1');
+let double =document.getElementById('btn2');
+btn1.onclick=function(){
+document.getElementById('l').innerHTML= "Single click";
+}
+btn2.ondblclick=function(){
+document.getElementById('l').innerHTML= "Double click";
+}
+l2.onmouseover=function(){
+document.getElementById('l').innerHTML= "Mouse Over";
+}
+
+l2.onmouseout=function(){
+document.getElementById('l').innerHTML= "Mouse out";
+}
+</script>
+
+
+</html>
